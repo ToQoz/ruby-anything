@@ -1,7 +1,4 @@
 require "pry-anything/version"
 
-module Pry
-  module Anything
-    # Your code goes here...
-  end
+module PryAnything
 end

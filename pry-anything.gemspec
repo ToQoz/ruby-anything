@@ -5,11 +5,11 @@ require 'pry-anything/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "pry-anything"
-  gem.version       = Pry::Anything::VERSION
+  gem.version       = PryAnything::VERSION
   gem.authors       = ["Takatoshi Matsumoto"]
   gem.email         = ["toqoz403@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Anything interface for pry}
+  gem.summary       = %q{Provide anything interface for pry. Adds 'anything' command to pry}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)

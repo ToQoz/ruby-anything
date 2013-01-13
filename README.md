@@ -1,6 +1,6 @@
-# Pry::Anything
+# PryAnything
 
-TODO: Write a gem description
+Provide anything interface for pry. Adds 'anything' command to pry
 
 ## Installation
 

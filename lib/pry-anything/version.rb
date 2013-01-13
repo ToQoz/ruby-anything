@@ -1,5 +1,3 @@
-module Pry
-  module Anything
-    VERSION = "0.0.1"
-  end
+module PryAnything
+  VERSION = "0.0.1"
 end
