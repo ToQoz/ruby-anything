@@ -1,7 +1,10 @@
 # RubyAnything
+
 Provide [anything](http://www.emacswiki.org/Anything) interface for ruby. Adds `_anything_` method to Kernel.
 
 ![thumbnail](http://pic.toqoz.net/a74849e3c9c2e55afe925bba2dcc23dfd94184ca.png)
+
+[Demo on Youtube](http://www.youtube.com/watch?v=bCyTMCOBkVw&hd=1)
 
 ## Installation
 
@@ -36,9 +39,6 @@ $ pry
 => true
 [2] pry(main)> _anything_ Pry.methods
 ```
-
-### Demo
-http://www.youtube.com/watch?v=bCyTMCOBkVw&hd=1
 
 ## Contributing
 
