@@ -2,9 +2,9 @@
 
 Provide [anything](http://www.emacswiki.org/Anything) interface for ruby. Adds `_anything_` method to Kernel.
 
-![thumbnail](http://pic.toqoz.net/a74849e3c9c2e55afe925bba2dcc23dfd94184ca.png)
+*[Demo on Youtube](http://www.youtube.com/watch?v=To45SwaWTGo)*
 
-[Demo on Youtube](http://www.youtube.com/watch?v=bCyTMCOBkVw&hd=1)
+![thumbnail](http://pic.toqoz.net/a74849e3c9c2e55afe925bba2dcc23dfd94184ca.png)
 
 ## Installation
 
@@ -38,6 +38,17 @@ $ pry
 [1] pry(main)> require 'ruby-anything'
 => true
 [2] pry(main)> _anything_ Pry.methods
+```
+
+## Tips
+
+Add to your ~/.ircrc or ~/.pryrc
+```ruby
+begin
+  require 'ruby-anything'
+rescue LoadError => err
+  puts "Failed to require. in #{__FILE__}"
+end
 ```
 
 ## Contributing
