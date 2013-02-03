@@ -52,7 +52,9 @@ module RubyAnything
     def draw_at(y)
       setpos(y, 0)
       clrtoeol
-      addstr view_collection[y]
+      if (line = view_collection[y])
+        addstr line[0..(maxx - 1)]
+      end
     end
 
     def draw_at!(y)
