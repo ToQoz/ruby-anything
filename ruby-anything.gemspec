@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["toqoz403@gmail.com"]
   gem.description   = %q{Anything interface for ruby}
   gem.summary       = %q{Provide anything interface for ruby. Adds method 'anything' to Kernel.}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/ToQoz/ruby-anything"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
