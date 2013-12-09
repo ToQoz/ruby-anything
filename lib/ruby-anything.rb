@@ -14,6 +14,18 @@ module RubyAnything
       raise ArgumentError, "Invalid argument `#{ary}` for RubyAnything.execute. This argument's element must have `to_s` method"
     end
 
+    isatty = STDOUT.isatty
+
+    unless isatty
+      stdout_old = STDOUT.dup
+      STDOUT.reopen('/dev/tty')
+    end
+
     Windows.anything ary.map(&:to_s)
+  ensure
+    unless isatty
+      STDOUT.flush
+      STDOUT.reopen stdout_old
+    end
   end
 end
