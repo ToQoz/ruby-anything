@@ -19,19 +19,20 @@ module RubyAnything
       # require 'logger'
       # @logger ||= Logger.new('/tmp/ch.txt')
       # @logger.info ch
+
       case ch
       when *KEYS[:left]
         left
       when *KEYS[:right]
         right
-      when Curses::Key::BACKSPACE
-        delete
+      when *KEYS[:backspace]
+        backspace
       when String
         insert ch
       end
     end
 
-    def delete
+    def backspace
       cursor.left
       text.delete cursor.x
       @parent.filter text.to_s

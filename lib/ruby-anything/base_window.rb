@@ -13,6 +13,7 @@ module RubyAnything
       left: [ Curses::Key::LEFT, 2 ],
       right: [ Curses::Key::RIGHT, 6 ],
       enter: [ 10 ],
+      backspace: [ 127 ],
       interrupt: [ 3, 4 ]
     }
     # Public: initialize BaseWindow
