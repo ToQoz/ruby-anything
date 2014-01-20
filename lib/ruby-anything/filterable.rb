@@ -4,8 +4,9 @@ module RubyAnything
       patterns = text.split(/\s+/).map do |word|
         /#{word}/i
       end
+
       select do |e|
-        patterns.empty? || patterns.any? { |p| p =~ e }
+        patterns.empty? || patterns.all? { |p| p =~ e }
       end
     end
   end
