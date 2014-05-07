@@ -17,5 +17,9 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
+  if RUBY_VERSION >= '2.1'
+    gem.add_dependency "curses", "~> 1.0"
+  end
+
   gem.add_development_dependency "rspec"
 end
